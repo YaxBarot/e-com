@@ -9,4 +9,4 @@ class Login(APIView):
     @staticmethod
     def get(request):
         print("jj")
-        return Response("HELLO WORLD")
+        return Response("HELLO WOR LD")
