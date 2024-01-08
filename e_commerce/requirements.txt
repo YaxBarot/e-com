@@ -1,3 +1,4 @@
 django
 django-rest-framework
 gunicorn==20.1.0
+mysqlclient
