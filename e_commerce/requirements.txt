@@ -1,4 +1,4 @@
-django
+django==4.0
 django-rest-framework
 gunicorn==20.1.0
 mysqlclient
