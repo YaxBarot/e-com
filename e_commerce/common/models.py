@@ -16,7 +16,7 @@ class customer_profile(Audit):
 
     customer_id = models.BigAutoField(primary_key=True)
 
-    user_name = models.CharField(max_length=255)
-    password = models.CharField(max_length=255)
+    user_name = models.CharField(max_length=100)
+    password = models.CharField(max_length=100)
     email = models.EmailField(unique=True)
-    address = models.CharField(max_length=255)
+    address = models.CharField(max_length=100)

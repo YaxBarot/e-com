@@ -9,6 +9,6 @@ from .models import customer_profile
 class Login(APIView):
     @staticmethod
     def get(request):
-        b = customer_profile(user_name="Yax", password="YAX", email="yaxb@gmail.com", address="kkkkk")
+        b = customer_profile(user_name="Yax", password="YAXb", email="yaxbarot@gmail.com", address="kkkkk")
         b.save()
         return Response("HELLO W OR LD")

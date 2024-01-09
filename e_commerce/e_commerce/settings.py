@@ -78,10 +78,10 @@ WSGI_APPLICATION = "e_commerce.wsgi.application"
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'sql5675544',
-        'USER': 'sql5675544',
-        'PASSWORD': 'TFfbKJKCT2',
-        'HOST': 'sql5.freemysqlhosting.net',
+        'NAME': 'ecom',
+        'USER': 'admin',
+        'PASSWORD': '6cabotstreet',
+        'HOST': 'ecom.cvm0ogyiampp.ca-central-1.rds.amazonaws.com',
         'PORT': '3306',
         'OPTION': {
             "init_command": "SET sql_mode='STRICT_TRANS_TABLES'",
