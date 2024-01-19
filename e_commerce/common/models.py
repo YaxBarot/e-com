@@ -9,14 +9,3 @@ class Audit(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
     is_deleted = models.BooleanField(default=False)
 
-
-class customer_profile(Audit):
-    class Meta:
-        db_table = "ec_customers"
-
-    customer_id = models.BigAutoField(primary_key=True)
-
-    user_name = models.CharField(max_length=100)
-    password = models.CharField(max_length=100)
-    email = models.EmailField(unique=True)
-    address = models.CharField(max_length=100)
