@@ -10,8 +10,11 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
+from distutils import config
 from pathlib import Path
-
+import os
+from datetime import timedelta
+from django.core.files.storage import FileSystemStorage
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -39,6 +42,8 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "rest_framework",
     "common",
+    "customer_profile",
+    "custom_security"
 ]
 
 MIDDLEWARE = [
@@ -74,6 +79,8 @@ WSGI_APPLICATION = "e_commerce.wsgi.application"
 
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
+
+
 
 DATABASES = {
     'default': {
@@ -131,3 +138,17 @@ STATIC_URL = "static/"
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+
+ACCESS_TOKEN_LIFETIME = timedelta(minutes=120)
+REFRESH_TOKEN_LIFETIME = timedelta(days=1)
+JWT_ALGORITHM = "HS512"
+JWT_SECRET = "EMP@1234"
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'dhruvilphotos06@gmail.com'
+EMAIL_HOST_PASSWORD = 'ngyc nhfp qyan ahqx'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_USE_SSL = False
