@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import ForgotPassword, OTPVerification, Registration,Logout, Login, ResetPassword, abc
+from .views import ForgotPassword, OTPVerification, Registration,Logout, Login, ResetPassword
 #,  OTPVerification, ResetPassword, ForgotPassword, AllHolidays
 
 app_name = "employees"
