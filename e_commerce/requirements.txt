@@ -2,3 +2,6 @@ django==4.0
 django-rest-framework
 gunicorn==20.1.0
 mysqlclient
+PyJWT==2.7.0
+pytz==2023.3
+sqlparse==0.4.4
